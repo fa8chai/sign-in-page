@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color:white;
+    background-color:rgb(85,85,85);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1em;
+    
+}
+h1{
+    padding: 15px;
+    border-bottom: solid 2.5px rgb(222,222,222);
+    background-color: black;
+}
+#under{
+    font-style: italic;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    color: rgb(30,30,30);
+    font-size: 18px;
+}
+#form{
+    margin: 2rem;
+    padding: 10px;
+    font-size: 1rem;
+}
+label{letter-spacing: 1.3px;font-size: 16px}
+#hr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 25vh;
+    justify-content: center;
+}
+#submit{
+    margin-top: 50px;
+    padding:3px 8px;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    border:unset;
+}
+#submit:hover{opacity: 0.6}
+
+#hr1{
+    width: 35%;
+    height:0px;
+    margin-left:0;
+    margin-right: 5px;
+}
+#hr2{
+    width:35%;
+    height:0px;
+    margin-left: 5px;
+    margin-right: 0;
+}
+span{
+    font-size: 0.9rem;
+}
+#label1{
+    margin-top: 5vh
+}
+    
+#label2{
+    margin-top: 10vh;
+
+
+}
+#username{
+    width:50%;
+    padding: 0.2em;
+    font-size: 15px;
+    border:1.5px solid gray;
+}
+#password{
+    padding: 0.1em;
+    font-size: 15px;
+    width: 30%;
+    border:1.5px solid gray;
+}
+
+a:hover{
+    color: rgb(153, 35, 15);
+}
+@media (min-width : 600px){
+    #username{width: 272px;}
+    #password{width: 180px;}
+}
+@media(max-width:600px){
+    #username{padding: 0.2em; font-size: 14px;}
+    #password{padding: 0.1em; font-size: 13px;}
+    form{text-align: left}
+}
+#username:hover{
+        background-color: rgb(230,230,240);
+}
+#password:hover{
+    background-color: rgb(230,230,240);
+}
