@@ -21,11 +21,12 @@ h1{
     font-size: 18px;
 }
 #form{
-    margin: 2rem;
+    margin-left: 6rem;
     padding: 10px;
     font-size: 1rem;
+    text-align: left;
 }
-label{letter-spacing: 1.3px;font-size: 16px}
+label{letter-spacing: 1.3px;font-size: 16px;}
 #hr{
     display: flex;
     flex-direction: row;
@@ -34,6 +35,7 @@ label{letter-spacing: 1.3px;font-size: 16px}
     justify-content: center;
 }
 #submit{
+    width:150px;
     margin-top: 50px;
     padding:3px 8px;
     background-color: black;
@@ -59,7 +61,7 @@ span{
     font-size: 0.9rem;
 }
 #label1{
-    margin-top: 5vh
+    margin-top: 7vh
 }
     
 #label2{
@@ -68,29 +70,36 @@ span{
 
 }
 #username{
-    width:50%;
+    margin-top: 10px;
+    width:350px;
     padding: 0.2em;
+    height: 30px;
     font-size: 15px;
-    border:1.5px solid gray;
+    border:0.5px solid gray;
 }
 #password{
+    margin-top: 10px;
     padding: 0.1em;
     font-size: 15px;
-    width: 30%;
-    border:1.5px solid gray;
+    height: 30px;
+    width: 350px;
+    border:0.5px solid gray;
 }
 
 a:hover{
     color: rgb(153, 35, 15);
 }
-@media (min-width : 600px){
-    #username{width: 272px;}
-    #password{width: 180px;}
+@media(max-width : 900px){
+    #submit{width: 100px}
+    #username{ width: 300px ; font-size: 14px;height: 28px;}
+    #password{ width: 300px ;font-size: 13px;height: 25px;}
+    #form{margin-left: 3rem;text-align: left}
 }
 @media(max-width:600px){
-    #username{padding: 0.2em; font-size: 14px;}
-    #password{padding: 0.1em; font-size: 13px;}
-    form{text-align: left}
+    #submit{width: 30%}
+    #username{ width: 50% ; font-size: 14px;height: 28px;}
+    #password{ width: 50% ;font-size: 13px;height: 25px;}
+    #form{margin-left: unset;text-align: center}
 }
 #username:hover{
         background-color: rgb(230,230,240);
